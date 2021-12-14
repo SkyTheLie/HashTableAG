@@ -1,5 +1,6 @@
 package main;
 
+import AGHashList.AGHashTableList;
 import hash.OpenHashTable;
 
 public class main {
@@ -45,6 +46,16 @@ public class main {
 		oht.printTable();
 		oht.add(18, 11);
 		oht.printTable();
+		
+		AGHashTableList<Integer, Integer> test = new AGHashTableList<Integer, Integer>(5);
+		test.add(1, 1);
+		System.out.println(test.getSize() + " ");
+		test.add(6, 1);
+		System.out.println(test.getSize() + " ");
+		test.remove(6);
+		System.out.println(test.getSize() + " ");
+		test.remove(1);
+		System.out.println(test.getSize() + " ");
 	}
 
 }
