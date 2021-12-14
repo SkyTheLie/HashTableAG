@@ -1,0 +1,2 @@
+module hash_tabel {
+}
