@@ -78,7 +78,7 @@ public class AGHashTable<K, V> {
 		int k = getHashKey(key);
 		int i = k;
 		int j = 1;
-		while(j <= capacity && tagList.get(i) != BESETZT && !key.equals(liste.get(i).getKey())) {
+		while(j <= capacity && tagList.get(i) == BESETZT && !key.equals(liste.get(i).getKey())) {
 			i = (i - s(j++, key)) % capacity;
 			if(i < 0) {
 				i += capacity;
